@@ -61,10 +61,36 @@ Tomada tomada = Enum.valueOf(Tomada.class, "OFF");
 System.out.println(tomada.isLigado());
 ```
 
+## Métodos Abstratos
+Podemos utilizar métodos abstratos através de uma interface ou podemos declarar dentro do `enum`.
+
+```java
+enum TipoDocumento {
+
+  CPF {
+    // Implementação obrigatória do método
+    @Override
+    public String geraNumeroTeste() {
+      return GeraCpfCnpj.cpf();
+    }
+  },
+  CNPJ {
+    // Implementação obrigatória do método
+    @Override
+    public String geraNumeroTeste() {
+      return GeraCpfCnpj.cnpj();
+    }
+  };
+
+  // Criação do método abstrato
+  public abstract String geraNumeroTeste();
+}
+```
+
 
 ## Informações importantes
-- Enums extendem implicitamente a classe `java.lang.Enum`, e por isso não podem extender nenhuma outra classe. Isso se dá devido ao java não ter suporte para herança múltipla.
+- Enums extendem implicitamente a classe `java.lang.Enum`, e por isso não podem extender nenhuma outra classe. Isso se dá devido a linguagem não ter suporte para herança múltipla.
 - Podem ser comparados usando o operador `==`
 - Não podem ser instaciados com `new`
 - Podem implementar interfaces
-- Pode ser declarado sepearadamente ou dentro de uma classe
+- Podem ser declarados sepearadamente ou dentro de uma classe
