@@ -1,7 +1,6 @@
 # Enumeradores
 
-Enums são listas de constantes. Quando você precisar de uma lista com valores pré-definidos que representam algum dado, deve ser usado `enum`.
-
+Enums são listas de constantes. Quando você precisar de uma lista com valores pré-definidos que representam algum dado, deve ser usado `enum`.  
 No Java, constantes são declaradas com a palavra-chave `final`. Isso significa que a atribuição feita é imutável. Portanto, é possível fazer modelagens usando atributos estáticos e constantes. No exemplo a seguir, modelamos o estado de uma tomada.
 
 ```java
@@ -37,8 +36,7 @@ enum Tomada {
 
 ## Métodos values e valueOf
 ### Método `values()`
-O método `Enum.values()` retorna um vetor com os valores do `enum`, e é utilizado quando se deseja saber todos os seus valores.
-
+O método `Enum.values()` retorna um vetor com os valores do `enum`, e é utilizado quando se deseja saber todos os seus valores.  
 Exemplo de iteração sobre os valores do `enum` usando um `for` loop;
 
 ```java
