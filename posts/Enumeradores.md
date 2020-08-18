@@ -12,7 +12,7 @@ class Tomada {
 }
 ```
 
-É possível modelar um exemplo similar usando `enum`. Só que o `enum`, por ter sido criado para esse casos, é uma solução mais adequada e legível.
+Outra forma de abordar a mesma representação é modelar usando `enum`. Só que o `enum`, por ter sido criado para esse casos, é uma solução mais adequada e legível.
 
 ```java
 enum Tomada {
@@ -38,7 +38,7 @@ enum Tomada {
 ### Método `values()`
 O método `Enum.values()` retorna um vetor com os valores do `enum`, e é utilizado quando se deseja saber todos os seus valores.
 
-Assim, é possível facilmente iterar sobre os valores do `enum` usando um `for` loop;
+Exemplo de iteração sobre os valores do `enum` usando um `for` loop;
 
 ```java
 // Mostra os valores do enum:
