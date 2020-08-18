@@ -1,11 +1,32 @@
 package enumeradores;
 
 /**
- * Enumeradores. Exemplo usando constantes para representar dias da semana.
+ * Enumeradores. Classe teste.
  */
 public class Enumeradores {
   public static void main(final String[] args) {
     usandoConstantes();
+    System.out.println();
+    usandoEnum();
+  }
+
+  private static void usandoEnum() {
+    DiaSemanaEnum segunda = DiaSemanaEnum.SEGUNDA;
+    DiaSemanaEnum terca = DiaSemanaEnum.TERCA;
+    DiaSemanaEnum quarta = DiaSemanaEnum.QUARTA;
+    DiaSemanaEnum quinta = DiaSemanaEnum.QUINTA;
+    DiaSemanaEnum sexta = DiaSemanaEnum.SEXTA;
+    DiaSemanaEnum sabado = DiaSemanaEnum.SABADO;
+    DiaSemanaEnum domingo = DiaSemanaEnum.DOMINGO;
+
+    DiaSemanaEnum[] dias = { segunda, terca, quarta, quinta, sexta, sabado, domingo };
+
+    System.out.println("Usando enums");
+
+    for (DiaSemanaEnum dia : dias) {
+      imprimeDiaSemana(dia);
+    }
+
   }
 
   private static void usandoConstantes() {
@@ -19,8 +40,38 @@ public class Enumeradores {
 
     final int[] dias = { segunda, terca, quarta, quinta, sexta, sabado, domingo };
 
+    System.out.println("Usando constantes");
+
     for (final int dia : dias) {
       imprimeDiaSemana(dia);
+    }
+  }
+
+  private static void imprimeDiaSemana(final DiaSemanaEnum dia) {
+    switch (dia) {
+      case SEGUNDA:
+        System.out.println("Segunda-feira");
+        break;
+      case TERCA:
+        System.out.println("Terça-feira");
+        break;
+      case QUARTA:
+        System.out.println("Quarta-feira");
+        break;
+      case QUINTA:
+        System.out.println("Quinta-feira");
+        break;
+      case SEXTA:
+        System.out.println("Sexta-feira");
+        break;
+      case SABADO:
+        System.out.println("Sábado");
+        break;
+      case DOMINGO:
+        System.out.println("Domingo");
+        break;
+      default:
+        break;
     }
   }
 
@@ -43,6 +94,9 @@ public class Enumeradores {
         break;
       case 6:
         System.out.println("Sábado");
+        break;
+      case 7:
+        System.out.println("Domingo");
         break;
       default:
         break;
