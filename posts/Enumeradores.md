@@ -12,12 +12,12 @@ class Tomada {
 }
 ```
 
-É possível modelar um exemplo similar usando enum. Só que o enum, por ter sido criado para esse casos, é uma solução mais adequada e legível.
+É possível modelar um exemplo similar usando `enum`. Só que o `enum`, por ter sido criado para esse casos, é uma solução mais adequada e legível.
 
 ```java
 enum Tomada {
   // (1) Define as possíveis constantes e seus respectivos valores
-  ON(true), OFF(false)
+  ON(true), OFF(false);
 
   // (2) Valor que vai ser atribuído a constante
   private boolean ligado;
@@ -34,9 +34,36 @@ enum Tomada {
 }
 ```
 
-### Informações importantes
+## Métodos values e valueOf
+### Método `values()`
+O método `Enum.values()` retorna um vetor com os valores do `enum`, e é utilizado quando se deseja saber todos os seus valores.
+
+Assim, é possível facilmente iterar sobre os valores do `enum` usando um `for` loop;
+
+```java
+// Mostra os valores do enum:
+// ON
+// OFF
+  for (Tomada tomada : Tomada.values()) {
+      System.out.println(tomada);
+  }
+```
+
+### Método `valueOf()`
+A classe `Enum` possuí o método `Enum.valueOf()` que permite obter uma instância de um `enum` através de uma `String`. Ou seja, permite avaliar um valor de uma String e tranforma-la numa instância do `enum`.
+
+```java
+// Instância do enum Tomada
+Tomada tomada = Enum.valueOf(Tomada.class, "OFF");
+
+// Mostra o valor do enum, no caso de "OFF" vai ser:
+// false
+System.out.println(tomada.isLigado());
+```
+
+
+## Informações importantes
 - Enums extendem implicitamente a classe `java.lang.Enum`, e por isso não podem extender nenhuma outra classe. Isso se dá devido ao java não ter suporte para herança múltipla.
-- Você pode usar `Tomada.values()` para retorna um vetor com os valores de `Tomada`. (Obs.: Isso vale para qualquer enum)
 - Podem ser comparados usando o operador `==`
 - Não podem ser instaciados com `new`
 - Podem implementar interfaces
