@@ -1,16 +1,17 @@
 # Enumeradores
 
-Enums são listas de constantes. Quando você precisar de uma lista com valores pré-definidos que representam algum dado, deve ser usado enum.
+Enums são listas de constantes. Quando você precisar de uma lista com valores pré-definidos que representam algum dado, deve ser usado `enum`.
 
-No java, constantes são declaradas com `final`. Isso significa que a atribuição feita é imutável. No seguinte exemplo, não é possível alterar o valor de `on` para `false`:
+No Java, constantes são declaradas com a palavra-chave `final`. Isso significa que a atribuição feita é imutável. Portanto, é possível fazer modelagens usando atributos estáticos e constantes. No exemplo a seguir, modelamos o estado de uma tomada.
 
 ```java
 class Tomada {
-  // Métodos estáticos podem ser acessados sem precisar instanciar a classe.
-  final static boolean on = true;
-  final static boolean off = false;
+  // Atributos estáticos podem ser acessados sem precisar instanciar a classe.
+  final static boolean ON = true;
+  final static boolean OFF = false;
 }
 ```
+> Obs.: É padrão usar caixa alta para declarar constantes.
 
 Outra forma de abordar a mesma representação é modelar usando `enum`. Só que o `enum`, por ter sido criado para esse casos, é uma solução mais adequada e legível.
 
@@ -22,7 +23,7 @@ enum Tomada {
   // (2) Valor que vai ser atribuído a constante
   private boolean ligado;
 
-  // (3) Construdor padrão que vai ser chamado automaticamente em 1.
+  // (3) Construtor padrão que vai ser chamado automaticamente na instanciação.
   Tomada(boolean ligado) {
     this.ligado = ligado;
   }

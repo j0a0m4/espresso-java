@@ -32,7 +32,7 @@ public enum Operacao implements IOperacao {
     this.operador = operador;
   }
 
-  public String getOperador() {
+  public String toString() {
     return this.operador;
   }
 

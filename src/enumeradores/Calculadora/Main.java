@@ -8,7 +8,7 @@ public class Main {
     for (Operacao operacao : Operacao.values()) {
       var resultado = operacao.executarOperacao(x, y);
 
-      System.out.println(x + " " + operacao.getOperador() + " " + y);
+      System.out.println(x + " " + operacao + " " + y);
       System.out.println(resultado);
       System.out.println();
     }
