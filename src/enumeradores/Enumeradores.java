@@ -11,19 +11,19 @@ public class Enumeradores {
   }
 
   private static void usandoEnum() {
-    DiaSemanaEnum segunda = DiaSemanaEnum.SEGUNDA;
-    DiaSemanaEnum terca = DiaSemanaEnum.TERCA;
-    DiaSemanaEnum quarta = DiaSemanaEnum.QUARTA;
-    DiaSemanaEnum quinta = DiaSemanaEnum.QUINTA;
-    DiaSemanaEnum sexta = DiaSemanaEnum.SEXTA;
-    DiaSemanaEnum sabado = DiaSemanaEnum.SABADO;
-    DiaSemanaEnum domingo = DiaSemanaEnum.DOMINGO;
+    final DiaSemanaEnum segunda = DiaSemanaEnum.SEGUNDA;
+    final DiaSemanaEnum terca = DiaSemanaEnum.TERCA;
+    final DiaSemanaEnum quarta = DiaSemanaEnum.QUARTA;
+    final DiaSemanaEnum quinta = DiaSemanaEnum.QUINTA;
+    final DiaSemanaEnum sexta = DiaSemanaEnum.SEXTA;
+    final DiaSemanaEnum sabado = DiaSemanaEnum.SABADO;
+    final DiaSemanaEnum domingo = DiaSemanaEnum.DOMINGO;
 
-    DiaSemanaEnum[] dias = { segunda, terca, quarta, quinta, sexta, sabado, domingo };
+    final DiaSemanaEnum[] dias = { segunda, terca, quarta, quinta, sexta, sabado, domingo };
 
     System.out.println("Usando enums");
 
-    for (DiaSemanaEnum dia : dias) {
+    for (final DiaSemanaEnum dia : dias) {
       imprimeDiaSemana(dia);
     }
 
