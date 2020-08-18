@@ -15,6 +15,7 @@ Olá, seja bem-vindo(a).<br>
 ## Posts
 :file_folder:`./posts`<br>
 :newspaper: Para consolidar o aprendizado de conteúdo que eu achar interessante, pretendo escrever uma postagem sobre o tema.
+- [Enumeradores](./posts/Enumeradores.md)
 
 ## Código-fonte
 :file_folder:`./src`<br>
