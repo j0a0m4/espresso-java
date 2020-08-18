@@ -1,4 +1,4 @@
-package enumeradores;
+package enumeradores.aula53;
 
 /**
  * DiaSemanaConstantes. Representando dias da semana usando constantes de

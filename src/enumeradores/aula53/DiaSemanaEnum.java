@@ -1,4 +1,4 @@
-package enumeradores;
+package enumeradores.aula53;
 
 /**
  * DiaSemanaEnum representa os dias da semana usando enum ao invés de constante.
