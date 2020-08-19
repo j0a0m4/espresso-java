@@ -13,10 +13,11 @@ Olá, seja bem-vindo(a).
 :exclamation: O principal foco no momento é no módulo 2.
 
 ## Posts
-[:file_folder:`./posts`](./posts)  
+:file_folder:`./posts`   
 :newspaper: Para consolidar o aprendizado de conteúdo que eu achar interessante, pretendo escrever uma postagem sobre o tema.
 - [Enumeradores](./posts/Enumeradores.md)
+- [Wrappers](./posts/ClassesWrappers.md)
 
 ## Código-fonte
-[:file_folder:`./src`](./src)  
-:octocat: Todos os exemplos feitos por mim vão ser versionados aqui.
+:file_folder:`./src`   
+:octocat: Código de todos os exemplos vão ser encontrados aqui.
