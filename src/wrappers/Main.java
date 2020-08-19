@@ -25,7 +25,11 @@ public class Main {
     Double num12 = new Double(3.5555);
     Boolean flag2 = new Boolean(true);
     Character b = new Character('b');
-    
-    System.out.println(num9.shortValue());
+
+    // o tipo de num vai ser int (primitivo)
+    var num = Integer.parseInt("254");
+    // o tipo de numInt vai ser Integer (Wrapper)
+    var numInt = Integer.valueOf("9121");
+
   }
 }

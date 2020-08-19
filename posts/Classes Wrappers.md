@@ -104,7 +104,15 @@ Antigamente, era possível usar os construtores dos wrappers pra instanciar os t
     Character b = new Character('b');
 ```
 
-Entrentanto, desde a versão 9 do Java que essa maneira foi depreciada.[^1]
+Entrentanto, desde a versão 9 do Java que essa maneira foi depreciada.[^1] De acordo com a documentação da Oracle, raramente o uso é apropriado e portanto é uma escolha melhor usar os método estático `<Wrapper>.valueOf()`[^2]
+
+```java
+// o tipo de num vai ser int (primitivo)
+var num = Integer.parseInt("254");
+
+// o tipo de numInt vai ser Integer (Wrapper)
+var numInt = Integer.valueOf("9121")
+```
 
 ## Autoboxing
 
@@ -112,3 +120,4 @@ Entrentanto, desde a versão 9 do Java que essa maneira foi depreciada.[^1]
 
 
 [^1]: https://stackoverflow.com/a/47095501
+[^2]: https://docs.oracle.com/javase/9/docs/api/deprecated-list.html#constructor
