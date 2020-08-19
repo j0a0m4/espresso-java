@@ -1,8 +1,7 @@
 # Clases Wrappers
 
-Java não pode ser considerado uma linguagem totalmente orientada a objetos por conta dos tipos primitivos. A princípio, os tipos primitivos não eram instancias de nenhuma classe. Foi introduzido então classes wrappers que representam os tipos primitivos. As Classes wrappers os "empacotam" - fenômeno também conhecido como *boxing*.
+Java não pode ser considerado uma linguagem totalmente orientada a objetos por conta dos tipos primitivos. Os tipos primitivos não são instancias de nenhuma classe, são apenas valores específicos. A partir do Java 5, foi introduzido então classes wrappers que representam os tipos primitivos. As Classes wrappers os "empacotam" - fenômeno também conhecido como *boxing*.   
 
-<br>   
 <table>
   <caption>
     Tabela de Hierarquia dos Tipos
@@ -94,7 +93,7 @@ Java não pode ser considerado uma linguagem totalmente orientada a objetos por 
 </table>
 <br>
 
-Antigamente, era possível usar os construtores dos wrappers pra instanciar os tipos primitivos distintos.
+Antigamente, era possível usar os construtores dos wrappers pra instanciar os tipos primitivos distintos.  
 
 ```java
  // Wrappers
@@ -119,7 +118,8 @@ var num = Integer.parseInt("254");
 var numInt = Integer.valueOf("9121")
 ```
 
-## Autoboxing
+## Autoboxing e Unboxing
+Uma funcionalidade muito útil que o compilador Java fornece é a conversão automática entre os tipos primitivos e os wrappers correspondentes.
 
 
 
