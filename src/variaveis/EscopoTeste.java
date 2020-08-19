@@ -1,6 +1,6 @@
 package variaveis;
 
-public class Main {
+public class EscopoTeste {
   public static void main(String[] args) {
     var escopo = new Escopo();
     escopo.setValor(10);
