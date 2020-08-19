@@ -1,8 +1,8 @@
 # Espresso :coffee:Java
 >Repositório de Estudo
 
-Olá, seja bem-vindo(a).<br>
-:arrow_right: Nesse repositório ficara registrado meu progresso nos Cursos de Java da [Loiane](https://www.youtube.com/channel/UCqQn92noBhY9VKQy4xCHPsg).<br>
+Olá, seja bem-vindo(a).  
+:arrow_right: Nesse repositório ficara registrado meu progresso nos Cursos de Java da [Loiane](https://www.youtube.com/channel/UCqQn92noBhY9VKQy4xCHPsg).  
 
 ## Módulos
 - [Módulo 1 - Básico ](https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBq0KXHsp5J3PxyFaBIXVs3r)
