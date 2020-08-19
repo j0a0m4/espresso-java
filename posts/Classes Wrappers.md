@@ -121,6 +121,16 @@ var numInt = Integer.valueOf("9121")
 ## Autoboxing e Unboxing
 Uma funcionalidade muito útil que o compilador Java fornece é a conversão automática entre os tipos primitivos e os wrappers correspondentes.
 
+```java
+// Autoboxing
+// O primitivo é automaticamente convertido na classe Long
+Long numW = 1000L;
+
+// Unboxing
+// A classe Long é automaticamente convertida no tipo primitivo
+long numP = numW;
+```
+
 
 
 
