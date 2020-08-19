@@ -17,6 +17,9 @@ Olá, seja bem-vindo(a).
 :newspaper: Para consolidar o aprendizado de conteúdo que eu achar interessante, pretendo escrever uma postagem sobre o tema.
 - [Enumeradores](./posts/Enumeradores.md)
 - [Wrappers](./posts/ClassesWrappers.md)
+- [Escopo](./posts/Escopo.md)
+- [Gerenciamento de Memória](./posts/GerenciamentoDeMemória.md)
+- [Passagem por valor e por referência](./posts/PassagemPorValorERef.md)
 
 ## Código-fonte
 :file_folder:`./src`   
