@@ -24,7 +24,7 @@ public class PassagemValorRef {
   }
 
   private static void testePassagemValor(int valor, Contato contato) {
-    // Variável local
+    // Variável local, não altera o escopo do main
     int novoValor = valor + 10;
     valor = novoValor;
 
@@ -33,9 +33,11 @@ public class PassagemValorRef {
   }
 
   private static void testePassagemRef(int valor, Contato contato) {
+    // Variável local, não altera o escopo do main
     int novoValor = valor + 10;
     valor = novoValor;
-
+    
+    // Chamada do método do objeto, altera o atributo do objeto referenciado
     contato.setNome("Rey Skywalker" + valor);
   }
 }
