@@ -2,94 +2,99 @@
 
 Java não pode ser considerado uma linguagem totalmente orientada a objetos por conta dos tipos primitivos. A princípio, os tipos primitivos não eram instancias de nenhuma classe. Foi introduzido então classes wrappers que representam os tipos primitivos. As Classes wrappers os "empacotam" - fenômeno também conhecido como *boxing*.
 
+<br>   
 <table>
-    <thead>
-        <tr>
-            <th></th>
-            <th>Tipo Primitivo</th>
-            <th>Classe Wrapper</th>
-            <th>Super Classe</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Lógico</td>
-            <td>
-              <code>boolean</code>
-            </td>
-            <td>
-              <code>Boolean</code>
-            </td>
-            <td rowspan="2">
-              <code>Object</code>
-            </td>
-        </tr>
-        <tr>
-          <td>Caractere</td>
-          <td>
-            <code>char</code>
-          </td>
-          <td>
-            <code>Character</code>
-          </td>
-        </tr>
-        <tr>
-            <td rowspan="4">Inteiro</td>
-            <td>
-            <code>byte</code>
-            </td>
-            <td>
-              <code>Byte</code>
-            </td>
-            <td rowspan="6">
-              <code>Number</code>
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <code>short</code>
-            </td>
-            <td>
-              <code>Short</code>
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <code>int</code>
-            </td>
-            <td>
-              <code>Integer</code>
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <code>long</code>
-            </td>
-            <td>
-              <code>Long</code>
-            </td>
-        </tr>
-        <tr>
-          <td rowspan="2">Ponto Flutuante</td>
-            <td>
-              <code>float</code>
-            </td>
-            <td>
-              <code>Float</code>
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <code>double</code>
-            </td>
-            <td>
-              <code>Double</code>
-            </td>
-        </tr>
-    </tbody>
+  <caption>
+    Tabela de Hierarquia dos Tipos
+  </caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Tipo Primitivo</th>
+      <th>Classe Wrapper</th>
+      <th>Super Classe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lógico</td>
+      <td>
+        <code>boolean</code>
+      </td>
+      <td>
+        <code>Boolean</code>
+      </td>
+      <td rowspan="2">
+        <code>Object</code>
+      </td>
+    </tr>
+    <tr>
+      <td>Caractere</td>
+      <td>
+        <code>char</code>
+      </td>
+      <td>
+        <code>Character</code>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="4">Inteiro</td>
+      <td>
+        <code>byte</code>
+      </td>
+      <td>
+        <code>Byte</code>
+      </td>
+      <td rowspan="6">
+        <code>Number</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>short</code>
+      </td>
+      <td>
+        <code>Short</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>int</code>
+      </td>
+      <td>
+        <code>Integer</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>long</code>
+      </td>
+      <td>
+        <code>Long</code>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">Ponto Flutuante</td>
+      <td>
+        <code>float</code>
+      </td>
+      <td>
+        <code>Float</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>double</code>
+      </td>
+      <td>
+        <code>Double</code>
+      </td>
+    </tr>
+  </tbody>
 </table>
+<br>
 
-Antigamente, era possível usar os construtores dos wrappers pra instanciar os tipos primitivos distintos e fazer casting.
+Antigamente, era possível usar os construtores dos wrappers pra instanciar os tipos primitivos distintos.
 
 ```java
  // Wrappers
