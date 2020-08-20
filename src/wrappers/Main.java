@@ -9,7 +9,7 @@ public class Main {
     long num4 = 1000L;
     float num5 = 3.5f;
     double num6 = 3.555555;
-
+    
     // Boolean
     boolean flag = true;
 
