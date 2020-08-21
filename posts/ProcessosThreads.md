@@ -31,7 +31,6 @@ Existem cinco estados importantes no ciclo de uma thread.
 
 ### Extendendo a classe `Thread`
 
-
 ```java
 // Criando a Thread
 public class MinhaThread extends Thread {
@@ -68,3 +67,48 @@ public class Main {
   }
 }
 ```
+
+### Implementando a interface `Runnable`
+Ao usar a interface `Runnable`, precisamos implementar o método `run`. Entretando, não tem como chamar o método start já que é uma interface que contem apenas a assinatura dos métodos.
+
+```java
+public class MeuRunnable implements Runnable {
+  private String nome;
+  private int tempo;
+
+  public MeuRunnable(String nome, int tempo) {
+    this.nome = nome;
+    this.tempo = tempo;
+    // Criamos a thread passando a Classe Meu Runnable como parametros
+    Thread t = new Thread(this);
+    // Inicializamos a thread
+    t.start();
+  }
+
+  @Override
+  public void run() {
+    try {
+      for (int i = 0; i < 6; i++) {
+        System.out.println(nome + " " + i);
+        if (i == 5) {
+          System.out.println();
+          System.out.println("Fim da " + nome);
+          System.out.println();
+        }
+        Thread.sleep(tempo);
+      }
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+  }
+
+}
+```
+### Melhores Abordagens
+
+- Quando fazemos `extends` da `Thread`, o único método que precisa ser sobreposto é o `run`.
+- Quando implementamos `Runnable`, também precisamos implementar o método `run`
+- Com a classe implementando `Runnable`, podemos extender qualquer outra classe.
+
+:zap: Melhores Práticas:  
+Se não for sobrepor qualquer outro método da classe `Thread`, pode ser melhor usar `Runnable`.
