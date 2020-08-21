@@ -7,8 +7,6 @@ public class MeuRunnable implements Runnable {
   public MeuRunnable(String nome, int tempo) {
     this.nome = nome;
     this.tempo = tempo;
-    Thread t = new Thread(this);
-    t.start();
   }
 
   @Override

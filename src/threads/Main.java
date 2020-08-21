@@ -14,6 +14,28 @@ public class Main {
   }
 
   public static void main(String[] args) {
-    executarRunnables();
+    var thread1 = new MeuRunnable("#1", 200);
+    var thread2 = new MeuRunnable("#2", 500);
+    var thread3 = new MeuRunnable("#3", 1000);
+
+    var t1 = new Thread(thread1);
+    var t2 = new Thread(thread2);
+    var t3 = new Thread(thread3);
+
+    Thread[] threads = { t1, t2, t3 };
+
+    for (Thread thread : threads) {
+      thread.start();
+    }
+    
+    for (Thread thread : threads) {
+      try {
+        thread.join();
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
+    }
+
+    System.out.println("Finalizou");
   }
 }
