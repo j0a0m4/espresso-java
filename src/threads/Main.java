@@ -43,7 +43,7 @@ public class Main {
     System.out.println("Finalizou");
   }
 
-  public static void main(String[] args) {
+  public static void ticTac() {
 
     var tt = new TicTac();
     var tic = new TicTacThread("Tic", tt);
@@ -55,6 +55,20 @@ public class Main {
     } catch (Exception e) {
       e.printStackTrace();
     }
+  }
 
+  public static void main(String[] args) {
+    var t1 = new MinhaThreadRunnable("#1", 300);
+    var t2 = new MinhaThreadRunnable("#2", 300);
+
+    t1.suspend();
+    try {
+      Thread.sleep(200);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+    t2.suspend();
+    t1.resume();
+    t2.resume();
   }
 }

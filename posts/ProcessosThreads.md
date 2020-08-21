@@ -187,3 +187,11 @@ Imagina o seguinte cenário:
 - `wait`: bloqueia a execução da thread temporariamente, ou seja, coloca a thread em modo de espera.
 - `notify`: notifica uma thread que estava esperando, ou seja, retoma a execução da thread.
 - `notifyAll`: notifica todas as threads, e a que tem prioridade mais alta ganha acesso ao recurso.
+
+### Suspensão
+
+Pode ser útil suspender uma thread. Por exemplo, uma thread que mostra a hora do dia. Podemos suspender e posteriormente resumir a execução.
+Até o Java 2 existiam os métodos `suspend, resume e stop`. O método `suspend` foi substituido por poder causar *deadlock*. Logo o resume foi removido, por não funcionar sem o suspend. O método stop foi substituído pelo método `interrupt`. Entretanto, é possível adicionar esses comportamentos de maneira mais segura na thread.
+- `suspend`: suspende temporariamente a execução da thread
+- `resume`: resume a execução da thread
+- `stop`: termina a execução da thread
