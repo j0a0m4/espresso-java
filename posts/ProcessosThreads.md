@@ -112,3 +112,26 @@ public class MeuRunnable implements Runnable {
 
 :zap: Melhores Práticas:  
 Se não for sobrepor qualquer outro método da classe `Thread`, pode ser melhor usar `Runnable`.
+
+### Método `join`
+Utilizamos o método `join` para esperarmos a finalização da thread antes de continuarmos a execução.
+```java
+  var runnable1 = new MeuRunnable("#1", 200);
+  var runnable2 = new MeuRunnable("#2", 400);
+  
+  var thread1 = new Thread(runnable1);
+  var thread2 = new Thread(runnable2);
+
+  thread1.start();
+  thread2.start();
+
+  try {
+    thread1.join();
+    thread2.join();
+  } catch (InterruptedException e) {
+    e.printStackTrace();
+  }
+
+  // Só vai imprimir depois das 2 threads terminarem execução
+  System.out.println("Finalizou");
+```
