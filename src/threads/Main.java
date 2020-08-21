@@ -13,7 +13,7 @@ public class Main {
     var t3 = new Thread(new MeuRunnable("T3", 1000));
   }
 
-  public static void main(String[] args) {
+  public static void testeRunnable() {
     var thread1 = new MeuRunnable("#1", 500);
     var thread2 = new MeuRunnable("#2", 500);
     var thread3 = new MeuRunnable("#3", 500);
@@ -41,5 +41,20 @@ public class Main {
     }
 
     System.out.println("Finalizou");
+  }
+
+  public static void main(String[] args) {
+
+    var tt = new TicTac();
+    var tic = new TicTacThread("Tic", tt);
+    var tac = new TicTacThread("Tac", tt);
+
+    try {
+      tic.thread.join();
+      tac.thread.join();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
   }
 }
