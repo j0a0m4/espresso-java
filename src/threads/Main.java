@@ -14,20 +14,24 @@ public class Main {
   }
 
   public static void main(String[] args) {
-    var thread1 = new MeuRunnable("#1", 200);
+    var thread1 = new MeuRunnable("#1", 500);
     var thread2 = new MeuRunnable("#2", 500);
-    var thread3 = new MeuRunnable("#3", 1000);
+    var thread3 = new MeuRunnable("#3", 500);
 
     var t1 = new Thread(thread1);
     var t2 = new Thread(thread2);
     var t3 = new Thread(thread3);
+
+    t1.setPriority(Thread.MAX_PRIORITY);
+    t2.setPriority(Thread.MIN_PRIORITY);
+    t3.setPriority(Thread.NORM_PRIORITY);
 
     Thread[] threads = { t1, t2, t3 };
 
     for (Thread thread : threads) {
       thread.start();
     }
-    
+
     for (Thread thread : threads) {
       try {
         thread.join();
