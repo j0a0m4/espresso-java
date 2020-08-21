@@ -195,3 +195,55 @@ Até o Java 2 existiam os métodos `suspend, resume e stop`. O método `suspend`
 - `suspend`: suspende temporariamente a execução da thread
 - `resume`: resume a execução da thread
 - `stop`: termina a execução da thread
+
+## Deadlock
+O deadlock ocorre quando uma thread 1 quer acessar um recurso 2 que está bloqueado pela thread 2. E a thread 2 quer acessar um recurso 1 que está bloqueado pela thread 1. Quando isso acontece o programa não consegue prosseguir.  
+![Deadlock Diagram](../assets/deadlock.png)
+  
+Um exemplo de deadlock no código:
+ ```java
+ public static void main(String[] args) {
+    final String RECURSO_1 = "Recurso #1";
+    final String RECURSO_2 = "Recurso #2";
+    
+    var t1 = new Thread(() -> {
+      synchronized (RECURSO_1) {
+        System.out.println("T #1: block recurso 1");
+
+        try {
+          Thread.sleep(200);
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
+
+        System.out.println("T #1: access recurso 2");
+
+        synchronized (RECURSO_2) {
+          System.out.println("T #1: block recurso 2");
+        }
+      }
+    });
+
+    var t2 = new Thread(() -> {
+      synchronized (RECURSO_2) {
+        System.out.println("T #2: block recurso 2");
+
+        try {
+          Thread.sleep(200);
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
+
+        System.out.println("T #2: access recurso 1");
+
+        synchronized (RECURSO_1) {
+          System.out.println("T #2: block recurso 1");
+        }
+      }
+    });
+
+    t1.start();
+    t2.start();
+  }
+ 
+ ```
