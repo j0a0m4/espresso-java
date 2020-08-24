@@ -18,7 +18,7 @@ Usando o REST, nos comunicamos com um *endpoint* fazendo uma requisição. E com
 ## API GraphQL
 GraphQL permite escrevermos uma query com os resultados que desejamos e recebemos um JSON somente com os campos e filtros escolhidos.
 
-GraphQL Query   
+GraphQL Query:
 ```graphql
 {
   allPeople(last: 3) {
@@ -31,7 +31,7 @@ GraphQL Query
 
 ```
 
-Resposta JSON
+Resposta JSON:
 ```json
 {
   "data": {
@@ -71,4 +71,60 @@ Alguns grandes utilizadores:
 > Lista completa pode ser acessada [aqui](https://graphql.org/users/).
 
 ## REST vs GraphQL
-Imagina
+Imagine uma interface de usuário (UI) que deseja exibir informção de um autor:
+- Nome do Autor
+- Cursos ministrados
+- Avalição do autor
+- Tópicos recentes
+
+### REST
+Usando um serviço REST, precisáriamos acessar cada um desses endpoints para buscarmos as informações necessárias.    
+- `GET /ps/author/<id>`  
+- `GET /ps/author/<id>/courses`  
+- `GET /ps/author/<id>/rating`  
+- `GET /ps/author/<id>/topics`  
+
+Um problema com essa abordagem é que as respostas de cada requisição vão conter mais dados do que necessário. Sendo assim, o *client* vai precisar filtrar as informações. Além de ter trafegado pacotes de dados desnecessários, usando mais banda e reduzindo a eficiência da comunicação.
+
+### GraphQL
+Usando GraphQL podemos na mesma requisição especificar os campos que desejamos e receber uma resposta com todas as informações necessárias, já filtradas e prontas para o consumo.  
+
+GraphQL Query:
+```graphql
+{
+  author (id : 2100) {
+    name
+    courses {
+      title
+    }
+    rating
+    topics (last : 3) {
+      name
+    }
+  }
+}
+```
+
+Resposta JSON: 
+```json
+{
+  "data": {
+    "author" : {
+      "name": "Loiane Groner",
+      "courses": [
+        { "title": "Dicas e Truques com Visual Studio Code"},
+        { "title": "Novidades Java 14"}
+      ],
+      "rating": "4.8",
+      "topics" : [
+        { "name": "Java" },
+        { "name": "Angular" },
+        { "name": "TypeScript" },
+      ]
+    }
+  }
+}
+```
+
+| REST | GraphQL |
+| - | - |
