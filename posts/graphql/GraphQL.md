@@ -6,7 +6,7 @@
 
 Em 2012, o Facebook iniciou esse projeto para superar problemas de busca de dados na sua plataforma mobile nativa. Isso mudou o foco de desenvolvimento para os aplicativos _client_. Em 2015, GraphQL virou open source e um grande envolvimento da comunidade se consolidou.
 
-## A motivo do GraphQL
+## O motivo do GraphQL
 
 GraphQL veio a existência devido a necessidade de melhor flexibilidade e eficiência nas interações cliente-servidor.
 
@@ -77,9 +77,12 @@ Alguns grandes utilizadores:
 - Twitter
 - Yelp
 - GitHub
-  > Lista completa pode ser acessada [aqui](https://graphql.org/users/).
+
+> Lista completa pode ser acessada [aqui](https://graphql.org/users/).
 
 ## REST vs GraphQL
+
+![REST vs GraphQL](../../assets/restVSgraphql.jpeg)
 
 Imagine uma interface de usuário (UI) que deseja exibir informção de um autor:
 
@@ -142,6 +145,11 @@ Resposta JSON:
 }
 ```
 
-| REST | GraphQL |
-| ---- | ------- |
+| REST                                                                          | GraphQL                                                                                   |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Múltiplas _round trips_ para coletar informção de múltiplos recursos          | Uma única requisição para coleter uma informção por agregação de dados                    |
+| _Over fetching_ e _Under fetching_                                            | Somente recebe o que você pediu, de acordo com suas necessidades                          |
+| Os times Front-end precisam contar com o Back-end para disponibilizar as APIs | Os times podem trabalhar independetemente                                                 |
+| Caching vem por padrão por usar a especificação HTTP                          | Não usa a especificação HTTP para usar o _cache_ e necessita de bibliotecas como _Apollo_ |
 
+**Over fetching** ocorre quando a requisição para a API Rest retorna um JSON com mais dados do que eu preciso. **Under fetching** ocorre quando eu precisar fazer requisições para vários _endpoints_ para conseguir buscar todos os dados necessários.
