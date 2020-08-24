@@ -1,4 +1,4 @@
-# GraphQL - O que é GraphQL?
+# GraphQL: 01 - O que é GraphQL?
 
 ![GraphQL Logo](../../assets/graphql.png)
 
@@ -153,3 +153,13 @@ Resposta JSON:
 | Caching vem por padrão por usar a especificação HTTP                          | Não usa a especificação HTTP para usar o _cache_ e necessita de bibliotecas como _Apollo_ |
 
 **Over fetching** ocorre quando a requisição para a API Rest retorna um JSON com mais dados do que eu preciso. **Under fetching** ocorre quando eu precisar fazer requisições para vários _endpoints_ para conseguir buscar todos os dados necessários.
+
+## GraphQL é útil para o meu negócio?
+
+Com GraphQL é possível aumentar a produtividade do time e o desenvolvimento do produto. Isso é possível porque os times de front end e back end podem trabalhar em paralelo. Além disso, poder buscar exatamente os dados que você deseja, melhora a performance de apps mobile e web. Os testes precisam ser refeitos apenas quando há um novo schema ou o schema é alterado, o que gera uma redução de custos.
+
+## Integração com APIs existentes
+
+![Itnegração GraphQL](../../assets/graphql-integracao.png)
+
+Um dos maiores benefícios de usar uma API GraphQL é a integração com outros sistemas legado e microserviços. É possível unificar seu sistema e esconder as complexidades atrás deu uma nova API GraphQL.
