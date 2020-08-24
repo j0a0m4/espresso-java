@@ -8,3 +8,6 @@
 ## Streams & Lambdas
 - :black_square_button: [Using Lambda Expressions in Java Code (1h 12m)](https://app.pluralsight.com/library/courses/lambda-expressions-java-code/table-of-contents)
 - :black_square_button: [Streams, Collectors, and Optionals for Data Processing in Java 8 (4h 29m)](https://app.pluralsight.com/library/courses/java-8-data-processing-streams-collectors-optionals/table-of-contents)
+
+## Java EE
+- :black_square_button: [Java Persistence API 2.2 (4h 15m)](https://app.pluralsight.com/library/courses/java-persistence-api-21/table-of-contents)
