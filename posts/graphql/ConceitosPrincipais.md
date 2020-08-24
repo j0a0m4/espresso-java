@@ -7,7 +7,17 @@ Vamos explorar os conceitos principais para construir uma `query` e `mutation`.
 ## Navegação
 
 - [Types](##types)
+  - [Scalar Types](<### Scalar Types>)
+  - [Complex Types](<### Complex Types>)
+  - [Enumeration Types](<### Enumeration Types>)
+  - [Query e Mutation](<### Query e Mutation>)
+  - [Non-nullable Type](<### Non-nullable Type>)
 - [Queries](##queries)
+  - [Fields](<### Fields>)
+  - [Arguments](<### Arguments>)
+  - [Alias](<### Alias>)
+  - [Fragments e Operation](<### Fragments e Operation>)
+  - [Variables](<### Variables>)
 - [Mutation](##mutations)
 
 ## Types
@@ -107,9 +117,9 @@ Nesse caso, o objeto `Author` sempre vai ter uma `id`. Por ter sido declarado co
 
 Vamos usar o GitHub [GraphQL API Explorer](https://developer.github.com/v4/explorer/) para explorar a linguagem. Essa é uma API pública e com dados de produção.
 
-### Queries - Fields
+### Fields
 
-> Query - Campos
+> Campos
 
 Uma query GraphQL permite pedir por campos específicos dos objetos. Logo, pode ser considerada uma consulta.
 
@@ -139,9 +149,9 @@ Resposta:
 }
 ```
 
-### Queries - Arguments
+### Arguments
 
-> Query - Argumentos
+> Argumentos
 
 É possível passar argumentos para os campos. Todo campo e objeto aninhado pode ter o seu próprio conjunto de argumentos. É essa funcionalidade que pemite não precisarmos de múltiplos _requests_ para a API.
 
@@ -195,7 +205,7 @@ following (last: 2) {
 }
 ```
 
-### Queries - Alias
+### Alias
 
 Essa funcionalidade permite usarmos um nome difrentes pros objetos. É útil principalmente quando queremos resultados do mesmo objeto com argumentos diferentes.
 
@@ -219,9 +229,9 @@ query {
 }
 ```
 
-### Queries - Fragments e Operation
+### Fragments e Operation
 
-> Queries - Fragmentos e Operação
+> Fragmentos e Operação
 
 _Fragments_ são unidades reutilizáveis. Permite construir um conjunto de campos e incluir em múltiplas queries.
 
@@ -254,9 +264,9 @@ Usando fragments, podemos reutilizar campos que estamos buscando em múltiplos l
 
 É possível nomear a query anônima, colocando o nome da operação. Nesse caso, a operação foi batizada `viewerInfo`.
 
-### Queries - Variables
+### Variables
 
-> Queries - Variáveis
+> Variáveis
 
 Os argumentos para os campos podem se tornar dinâmicos com o uso de variáveis. GraphQL usa variáveis para coletar os valores dinâmicas da query, e passa-las em um dicionário separado.
 
