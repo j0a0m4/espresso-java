@@ -1,13 +1,13 @@
-# Passagem de parâmetros por valor e por referência  
+# Passagem de parâmetros por valor e por referência
 
-Os parâmetros dos métodos funcionam da maneira similar à pilha de memória. Os tipos primitivos vão ser passados por *valor*, enquanto os objetos vão ser passados por *referência*.  
+Os parâmetros dos métodos funcionam da maneira similar à pilha de memória. Os tipos primitivos vão ser passados por _valor_, enquanto os objetos vão ser passados por _referência_.
 
-|Tipo     |Exemplo|Passagem|
-|---------|----------|--------|
-|Primitivo|`int, double, boolean`|Valor|
-|Outros   |`class, enum, Array`|Referência|
+| Tipo      | Exemplo                | Passagem   |
+| --------- | ---------------------- | ---------- |
+| Primitivo | `int, double, boolean` | Valor      |
+| Outros    | `class, enum, Array`   | Referência |
 
-Isso significa que a pilha do método que está sendo executado vai ter uma cópia do valor, caso seja passagem por valor. E uma *referência*, caso seja uma passagem por referência.
+Isso significa que a pilha do método que está sendo executado vai ter uma cópia do valor, caso seja passagem por valor. E uma _referência_, caso seja uma passagem por referência.
 
 Vamos examinar um exemplo usando a classe `Contato`
 
@@ -36,7 +36,7 @@ public class PassagemValorRef {
     // Variável local, não altera o escopo do main
     int novoValor = valor + 10;
     valor = novoValor;
-    
+
     // Chamada do método do objeto, altera o atributo do objeto referenciado
     contato.setNome("Rey Skywalker" + valor);
   }

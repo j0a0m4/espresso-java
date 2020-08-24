@@ -10,6 +10,7 @@ class Tomada {
   final static boolean OFF = false;
 }
 ```
+
 > Obs.: É padrão usar caixa alta para declarar constantes.
 
 Outra forma de abordar a mesma representação é modelar usando `enum`. Só que o `enum`, por ter sido criado para esse casos, é uma solução mais adequada e legível.
@@ -35,7 +36,9 @@ enum Tomada {
 ```
 
 ## Métodos values e valueOf
+
 ### Método `values()`
+
 O método `Enum.values()` retorna um vetor com os valores do `enum`, e é utilizado quando se deseja saber todos os seus valores.  
 Exemplo de iteração sobre os valores do `enum` usando um `for` loop;
 
@@ -49,6 +52,7 @@ Exemplo de iteração sobre os valores do `enum` usando um `for` loop;
 ```
 
 ### Método `valueOf()`
+
 A classe `Enum` possuí o método `Enum.valueOf()` que permite obter uma instância de um `enum` através de uma `String`. Ou seja, permite avaliar um valor de uma String e tranforma-la numa instância do `enum`.
 
 ```java
@@ -61,6 +65,7 @@ System.out.println(tomada.isLigado());
 ```
 
 ## Métodos Abstratos
+
 Podemos utilizar métodos abstratos através de uma interface ou podemos declarar dentro do `enum`.
 
 ```java
@@ -86,8 +91,8 @@ enum TipoDocumento {
 }
 ```
 
-
 ## Informações importantes
+
 - Enums extendem implicitamente a classe `java.lang.Enum`, e por isso não podem extender nenhuma outra classe. Isso se dá devido a linguagem não ter suporte para herança múltipla.
 - Podem ser comparados usando o operador `==`
 - Não podem ser instaciados com `new`
