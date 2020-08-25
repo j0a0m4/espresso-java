@@ -15,13 +15,14 @@ Cursos da [Loiane](https://www.youtube.com/channel/UCqQn92noBhY9VKQy4xCHPsg).
 ## Posts
 :file_folder:`./posts`   
 :newspaper: Para consolidar o aprendizado de conteúdo que eu achar interessante, pretendo escrever uma postagem sobre o tema.
-- [Enumeradores](./posts/Enumeradores.md)
-- [Wrappers](./posts/ClassesWrappers.md)
-- [Escopo](./posts/Escopo.md)
-- [Gerenciamento de Memória](./posts/GerenciamentoDeMemória.md)
-- [Passagem por valor e por referência](./posts/PassagemPorValorERef.md)
-- [Multitarefa: Threads](./posts/ProcessosThreads.md)
-- [GraphQL](./posts/graphql)
+- :coffee: Java
+  - [Enumeradores](./posts/Enumeradores.md)
+  - [Wrappers](./posts/ClassesWrappers.md)
+  - [Escopo](./posts/Escopo.md)
+  - [Gerenciamento de Memória](./posts/GerenciamentoDeMemória.md)
+  - [Passagem por valor e por referência](./posts/PassagemPorValorERef.md)
+  - [Multitarefa: Threads](./posts/ProcessosThreads.md)
+- :arrow_up_small: [GraphQL](./posts/graphql)
 
 ## Código-fonte
 :file_folder:`./src`   
