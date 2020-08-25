@@ -13,7 +13,7 @@ Cursos da [Loiane](https://www.youtube.com/channel/UCqQn92noBhY9VKQy4xCHPsg).
 
 
 ## Posts
-:file_folder:`./posts`   
+[:file_folder:`./posts`](./posts)   
 :newspaper: Para consolidar o aprendizado de conteúdo que eu achar interessante, pretendo escrever uma postagem sobre o tema.
 - :coffee: Java
   - [Enumeradores](./posts/Enumeradores.md)
@@ -25,5 +25,5 @@ Cursos da [Loiane](https://www.youtube.com/channel/UCqQn92noBhY9VKQy4xCHPsg).
 - :arrow_up_small: [GraphQL](./posts/graphql)
 
 ## Código-fonte
-:file_folder:`./src`   
+[:file_folder:`./src`](./src)   
 :octocat: Código de todos os exemplos vão ser encontrados aqui.
