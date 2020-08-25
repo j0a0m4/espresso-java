@@ -14,7 +14,7 @@ Essa distinção é importante: nos tipos primitivos, é armazenado o valor. Já
 
 Além disso, as variáveis que se encontram na pilha tem certa visibilidade, que é chamada de **escopo**. Quando o compilador executa o corpo de um método, ele pode apenas acessar objetos da pilha de memória daquela chamada. Ele não pode acessar outras variáveis, pois estão fora do escopo.
 
-A pilha de memória é alocada por thread. Logo, toda vez que uma thread é criada e executada, ela tem sua prórima pilha de memória e não pode acessar a pilha de memória das outras threads.
+A pilha de memória é alocada por thread. Logo, toda vez que uma thread é criada e executada, ela tem sua prória pilha de memória e não pode acessar a pilha de memória das outras threads.
 
 ## Heap
 
