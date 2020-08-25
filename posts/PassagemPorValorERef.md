@@ -5,7 +5,7 @@ Os parâmetros dos métodos funcionam da maneira similar à pilha de memória. O
 | Tipo      | Exemplo                | Passagem   |
 | --------- | ---------------------- | ---------- |
 | Primitivo | `int, double, boolean` | Valor      |
-| Outros    | `class, enum, Array`   | Referência |
+| Objeto    | `class, enum, Array`   | Referência |
 
 Isso significa que a pilha do método que está sendo executado vai ter uma cópia do valor, caso seja passagem por valor. E uma _referência_, caso seja uma passagem por referência.
 
