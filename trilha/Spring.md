@@ -4,7 +4,7 @@
 
 ### Iniciante
 - :white_check_mark: [Spring: The Big Picture (1h15min)](https://app.pluralsight.com/library/courses/spring-big-picture/table-of-contents)
-- :black_square_button: [Spring Framework: Spring Fundamentals (2h27min)](https://app.pluralsight.com/library/courses/spring-framework-spring-fundamentals/table-of-contents)
+- :white_check_mark: [Spring Framework: Spring Fundamentals (2h27min)](https://app.pluralsight.com/library/courses/spring-framework-spring-fundamentals/table-of-contents)
 - :black_square_button: [Spring Framework: Creating Your First Spring Boot Application (1h55min)](https://app.pluralsight.com/library/courses/creating-first-spring-boot-application/table-of-contents)
 
 ### Intermediário
