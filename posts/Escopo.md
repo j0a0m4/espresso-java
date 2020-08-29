@@ -39,7 +39,7 @@ public class Escopo {
   private int valor;
 
   public int getValor() {
-    // Não é necessário usar this nesse caso, já que nãp há passagem de parâmetros.
+    // Não é necessário usar this nesse caso, já que não há passagem de parâmetros.
     return valor;
   }
 
