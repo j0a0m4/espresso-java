@@ -1,3 +1,5 @@
+# Java Language
+
 ## [Java Language Fundamentals](https://app.pluralsight.com/paths/skills/java)
 
 ### Core
