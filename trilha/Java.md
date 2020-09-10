@@ -22,12 +22,8 @@
 - :black_square_button: [Using Lambda Expressions in Java Code (1h 12m)](https://app.pluralsight.com/library/courses/lambda-expressions-java-code/table-of-contents)
 - :black_square_button: [Streams, Collectors, and Optionals for Data Processing in Java 8 (4h 29m)](https://app.pluralsight.com/library/courses/java-8-data-processing-streams-collectors-optionals/table-of-contents)
 
-## [Java EE](https://app.pluralsight.com/paths/skill/java-ee-foundations)
-
-- :black_square_button: [Java Persistence API 2.2 (4h 15m)](https://app.pluralsight.com/library/courses/java-persistence-api-21/table-of-contents)
-
 ## [Java Unit Testing](https://app.pluralsight.com/paths/skills/unit-testing-in-java)
 
 - :white_check_mark: [Getting Started Unit Testing with JUnit 5 (1h 28m)](https://app.pluralsight.com/library/courses/junit-5-unit-testing-getting-started/table-of-contents)
-- :black_square_button: [TDD with JUnit 5 (1h 17m)](https://app.pluralsight.com/library/courses/tdd-junit5/table-of-contents)
+- :white_check_mark: [TDD with JUnit 5 (1h 17m)](https://app.pluralsight.com/library/courses/tdd-junit5/table-of-contents)
 - :black_square_button: [Getting Started with Mockito (1h 23m)](https://app.pluralsight.com/library/courses/mockito-getting-started/table-of-contents)
