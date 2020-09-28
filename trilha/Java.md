@@ -5,6 +5,7 @@
 ### Core
 
 - :black_square_button: [Java Fundamentals: The Core Platform (7h 25m)](https://app.pluralsight.com/library/courses/java-fundamentals-core-platform/table-of-contents)
+- :black_square_button: [Java: JSON Fundamentals (2h 29m)](https://app.pluralsight.com/library/courses/java-json-fundamentals/table-of-contents)
 - :white_check_mark: [Java Fundamentals: Generics (4h 7m)](https://app.pluralsight.com/library/courses/java-generics)
 - :black_square_button: [Java Fundamentals: The Java Reflection API Method Handles (3h 10m)](https://app.pluralsight.com/library/courses/java-generics)
 - :black_square_button: [Working with Nulls in Java (1h 12m)](https://app.pluralsight.com/library/courses/working-nulls-java/table-of-contents)
